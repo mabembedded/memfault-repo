@@ -3,16 +3,16 @@
 	<default sync-j="8" revision="dunfell"/>
 	<remote name="oe" fetch="https://github.com/openembedded"/>
 	<remote name="rpi" fetch="https://github.com/agherzan"/>
-	<remote name="swu" fetch="https://github.com/sbabic"/>
 	<remote name="yocto" fetch="git://git.yoctoproject.org"/>
-	<remote name="mab" fetch="ssh://git@github.com"/>
+	<remote name="mab" fetch="https://github.com/mabembedded"/>
+	<remote name="memfault" fetch="https://github.com/memfault"/>
 
 	<project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"/>
 	<project name="meta-raspberrypi.git" path="sources/meta-raspberrypi" remote="rpi"/>
-	<project name="meta-swupdate.git" path="sources/meta-swupdate" remote="swu"/>
 	<project name="openembedded-core.git" path="sources/openembedded-core" remote="oe"/>
 	<project name="poky.git" path="sources/poky" remote="yocto"/>
-	<project name="mab/meta-memfault-rpi.git" path="sources/meta-memfault-rpi" remote="mab" revision="main">
+	<project name="memfault-linux-sdk.git" path="sources/memfault-linux-sdk" remote="memfault"/>
+	<project name="meta-memfault-rpi.git" path="sources/meta-memfault-rpi" remote="mab" revision="main">
 		<linkfile src="scripts/setup.sh" dest="setup.sh"/>
 	</project>
 </manifest>
